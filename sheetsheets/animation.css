@@ -1983,17 +1983,36 @@
     background-position: -2028vw 0;
   }
 }
-/* подвал */
+/* подвал — бесконечная лента */
 .ura {
+  overflow: hidden;
+  position: relative;
+}
+
+.ura__track {
+  display: flex;
+  width: max-content;
   animation: konets 3s linear infinite;
 }
+
+.ura__track > * {
+  flex-shrink: 0;
+}
+
+/* плавный бесконечный сдвиг */
 @keyframes konets {
-  0% {
+  from {
     transform: translateX(0);
   }
-  100% {
-    transform: translateX(-100%);
+  to {
+    transform: translateX(-50%);
   }
+}
+
+/* падающий текст — оставил как есть, только немного унифицировал */
+.text4 p {
+  position: absolute;
+  animation-iteration-count: infinite;
 }
 
 .text4 p:nth-of-type(1) {
@@ -2017,7 +2036,7 @@
   animation: textFall2 7s ease infinite -3s;
 }
 .text4 p:nth-of-type(6) {
-  left: 2cqw;
+  left: 2vw;
   animation: textFall3 3s ease infinite;
 }
 .text4 p:nth-of-type(7) {

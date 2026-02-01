@@ -403,26 +403,53 @@ body {
 .podval {
   width: 100vw;
   height: 13.438vw;
-  background-color: #000000;
-  overflow: hidden; /* Скрывает выходящий за пределы контент */
+  background: #000;
+  overflow: hidden;
   position: relative;
 }
 
+/* viewport */
 .ura {
-  display: flex; /* Выстраиваем текст в строку */
+  height: 100%;
+  display: flex;
   align-items: flex-end;
-  width: 121vw; /* Удваиваем ширину для плавной прокрутки */
-  height: 13.438vw;
-  background-color: #000000;
+  overflow: hidden;
 }
 
+/* движущаяся дорожка */
+.ura__track {
+  display: flex;
+  width: max-content; /* автоматически по контенту */
+  height: 100%;
+  animation: konets 14s linear infinite;
+}
+
+/* одна группа текста */
+.ura__group {
+  display: flex;
+  align-items: flex-end;
+}
+
+/* сама анимация (половина, потому что 2 копии) */
+@keyframes konets {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* текст */
 .txt1,
 .txt2,
 .txt3 {
   font-family: 'Helvetica Neue';
-  font-weight: bold;
+  font-weight: 700;
   font-size: 2.344vw;
   color: #ff2c73;
-  margin: 5vw 6.2vw;
-  white-space: nowrap; /* Запрещаем перенос строк */
+
+  margin: 0 6.2vw 5vw 6.2vw; /* снизу как раньше */
+  white-space: nowrap;
+  flex-shrink: 0; /* важно: не сжимается */
 }

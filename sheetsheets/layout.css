@@ -1,0 +1,428 @@
+body {
+  width: 100vw;
+  background-color: rgb(255, 255, 255);
+  font-family: 'Helvetica Neue', Helvetica;
+}
+body {
+  cursor: url(../images/hover.png), auto;
+}
+/* 1 box */
+.box-text1 {
+  overflow: hidden; /* Скрываем выходящий текст */
+  white-space: nowrap; /* Запрещаем перенос строк */
+  position: relative;
+  background-color: #000000;
+  height: 19.53vw;
+  display: flex;
+  align-items: center; /* Центрируем текст по вертикали */
+}
+.text1 {
+  display: inline-block;
+  font-family: 'Helvetica Neue';
+  font-weight: bold;
+  color: #ff2c73;
+  font-size: 14.063vw;
+}
+.text1 p {
+  display: inline-block;
+  margin-right: 5vw;
+}
+/* 2 box */
+.bigbox2 {
+  background-color: #000000;
+  height: 27.11vw;
+  display: flex;
+  overflow: hidden;
+}
+.box2stars {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 0.4vw;
+}
+.stars {
+  position: relative;
+  width: 23.44vw;
+  animation: stars 4.5s linear infinite;
+}
+.box2zuki {
+  white-space: nowrap;
+  display: flex;
+  width: 100vw;
+  height: 25vw;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  gap: 10vw;
+}
+
+.zuk1 {
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 1%;
+  width: 30.625vw;
+  height: 18.881vw;
+  margin-left: 1vw;
+  margin-top: auto;
+  animation: zuki1 2s ease-in-out infinite;
+}
+.zuk2 {
+  padding: 1%;
+  position: relative;
+  width: 23.047vw;
+  height: 19.757vw;
+  margin-left: -6vw;
+  margin-top: auto;
+  animation: zuki2 0.5s ease-in-out infinite;
+}
+.zuk3 {
+  padding: 1%;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 24.688vw;
+  height: 24.688vw;
+  margin-left: auto;
+  margin-top: auto;
+  animation: zuki3 2s ease-in-out infinite;
+}
+/* 3 box */
+.bigbox3 {
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 0;
+}
+
+.gipnoz {
+  width: 50vw;
+  height: 50vw;
+  position: relative;
+  background-image: url('../images/gipnoz.png');
+  background-repeat: no-repeat;
+  background-size: 900vw;
+  animation: gipnoz 1s steps(1) infinite;
+}
+
+/* 1 див - все вместе прописываю общие св-ва */
+.imgtext2 {
+  display: flex;
+  width: 50vw;
+  height: 50vw;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  background-image: url(../images/text2.png);
+  background-repeat: no-repeat;
+  background-size: 50vw 50vw;
+}
+
+/* мухи */
+.muha-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 3;
+}
+.muhaaaaaa {
+  width: 6.25vw;
+  height: 6.25vw;
+  position: absolute;
+  z-index: 4;
+  top: -20vw;
+  animation: fall 5s ease-in-out infinite;
+}
+/* исключительно блок с текстом */
+.text11 {
+  margin-top: 13vw;
+  margin-left: 5vw;
+  position: absolute;
+  z-index: 3;
+  animation: bounce1 4s infinite ease-in-out;
+  position: absolute;
+  font-family: 'Helvetica Neue';
+  font-weight: bold;
+  font-size: 6.25vw;
+  color: #ff2c73;
+  z-index: 6;
+  background-color: #000000;
+}
+.text12 {
+  margin-top: 23vw;
+  margin-left: 8vw;
+  position: absolute;
+  z-index: 3;
+  animation: bounce2 2s infinite ease-in-out;
+  position: absolute;
+  font-family: 'Helvetica Neue';
+  font-weight: bold;
+  font-size: 6.25vw;
+  color: #ff2c73;
+  z-index: 6;
+  background-color: #000000;
+}
+
+/* 4 блок  */
+.pachki {
+  width: 100vw;
+  height: 35.156vw;
+  position: relative;
+  background-image: url('../images/pachki.png');
+  background-repeat: no-repeat;
+  background-size: 1300vw 35.156vw;
+  animation: pachkianim 2s steps(1) infinite;
+}
+/* 5 блок большой */
+.bigbox5 {
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 0;
+  background-color: #000000;
+}
+/* 1 див - все вместе прописываю общие св-ва */
+.imgtext3 {
+  display: flex;
+  width: 50vw;
+  height: 50vw;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+/* обои текстурка */
+.tancy {
+  height: 50vw;
+  width: 50vw;
+  position: absolute;
+  z-index: 2;
+}
+.dguki-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 3;
+}
+.crash {
+  top: -20vw;
+  width: 6.25vw;
+  height: 6.25vw;
+  position: absolute;
+  z-index: 4;
+  animation: fall 5s ease-in-out infinite;
+}
+/* обводка + текст */
+.vodka2 {
+  margin-top: 15vw;
+  margin-left: 4vw;
+  position: absolute;
+  z-index: 3;
+  animation: shake 1s ease-in-out infinite;
+}
+
+/* исключительно обводка */
+.obvodkablack2 {
+  position: absolute;
+  width: 38.75vw;
+  height: 21.797vw;
+  z-index: 4;
+}
+/* исключительно блок с текстом */
+
+.text3 {
+  margin-top: 0.5vw;
+  margin-left: 1vw;
+  position: absolute;
+  font-family: 'Helvetica Neue';
+  font-weight: bold;
+  font-size: 5.313vw;
+  color: #ff2c73;
+  z-index: 5;
+}
+.chtochto {
+  width: 50vw;
+  height: 50vw;
+  background-image: url('../images/chtochto.png');
+  background-repeat: no-repeat;
+  background-size: 1850vw 50vw;
+  animation: chtochto 1s steps(1) infinite;
+}
+/* 6 box */
+.strax {
+  width: 100vw;
+  height: 31.25vw;
+  background-color: #000000;
+  position: absolute;
+  white-space: nowrap;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+.bigbox6 {
+  width: 170vw;
+  height: 31.25vw;
+  background-color: #000000;
+  position: absolute;
+  white-space: nowrap;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 0.4vw;
+}
+
+.wowstar1,
+.wowstar2,
+.wowstar3,
+.wowstar4 {
+  display: inline-block;
+  width: 29.688vw;
+  height: 29.688vw;
+}
+/* 7 блок */
+.bigbox7 {
+  background-color: #000000;
+  width: 100vw;
+  height: 39.063vw;
+  display: flex;
+  overflow: hidden;
+}
+.sprite5 {
+  width: 60.156vw;
+  height: 39.06vw;
+  background-image: url('../images/sprite5.svg');
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: 300.781vw 39.06vw;
+}
+.ashkafon {
+  width: 40.078vw;
+  height: 39.06vw;
+  background-color: #000000;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+.krug1 {
+  position: absolute;
+  width: 34.375vw;
+  height: 34.375vw;
+  margin-top: 3.5vw;
+  margin-left: 3.5vw;
+  z-index: 1;
+}
+.starfon {
+  position: absolute;
+  width: 31.406vw;
+  height: 31.406vw;
+  margin-top: 4.7vw;
+  margin-left: 5vw;
+  z-index: 2;
+}
+
+.bukashkafon {
+  position: absolute;
+  width: 34.213vw;
+  height: 35.187vw;
+  margin-top: 3.2vw;
+  margin-left: 3.5vw;
+  z-index: 2;
+}
+/* 8 блок большой */
+.bigbox8 {
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  width: 100vw;
+  height: 39.063vw;
+  background-color: #000000;
+}
+/* 1 див - все вместе прописываю общие св-ва */
+.imgtext4 {
+  display: flex;
+  width: 61.328vw;
+  height: 39.063vw;
+  background-image: url('../images/text4fon.png');
+  background-size: contain;
+  overflow: hidden;
+  z-index: 1;
+}
+/* обои текстурка */
+.text4fon {
+  width: 61.328vw;
+  height: 39.063vw;
+  position: absolute;
+  z-index: 2;
+}
+/* обводка + текст */
+.vodka3 {
+  position: absolute;
+  z-index: 3;
+}
+
+/* исключительно обводка */
+.obvodkablack3 {
+  position: absolute;
+  width: 37.031vw;
+  height: 18.75vw;
+  z-index: 4;
+}
+/* исключительно блок с текстом */
+
+.text4 {
+  font-family: 'Helvetica Neue';
+  font-weight: bold;
+  font-size: 6.25vw;
+  color: #ff2c73;
+  position: relative;
+  z-index: 2;
+}
+.text4 p {
+  padding: 0.9vw 1.6vw;
+  background-color: #000000;
+  position: absolute;
+}
+.balletgirl {
+  width: 40.078vw;
+  height: 39.063vw;
+  background-image: url('../images/balletgirl.png');
+  background-repeat: no-repeat;
+  background-size: 802vw 39vw;
+  animation: gogirl 3s steps(1) infinite;
+}
+/* подвал */
+.podval {
+  width: 100vw;
+  height: 13.438vw;
+  background-color: #000000;
+  overflow: hidden; /* Скрывает выходящий за пределы контент */
+  position: relative;
+}
+
+.ura {
+  display: flex; /* Выстраиваем текст в строку */
+  align-items: flex-end;
+  width: 121vw; /* Удваиваем ширину для плавной прокрутки */
+  height: 13.438vw;
+  background-color: #000000;
+}
+
+.txt1,
+.txt2,
+.txt3 {
+  font-family: 'Helvetica Neue';
+  font-weight: bold;
+  font-size: 2.344vw;
+  color: #ff2c73;
+  margin: 5vw 6.2vw;
+  white-space: nowrap; /* Запрещаем перенос строк */
+}
